@@ -1,0 +1,119 @@
+body {
+    min-height: 100vh;
+    position: relative;
+}
+
+#body-home {
+    background-image: url(../imagenes/bg-home.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    background-blend-mode: darken;
+    background-color: rgba(10, 8, 7, 0.699);
+}
+
+.barra-navegacion {
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    padding: 0 5%;
+}
+
+
+body:not(#body-home) .barra-navegacion {
+    background-color: #212529;
+    
+}
+
+.barra-navegacion a {
+    color: white;
+    text-decoration: none;
+    padding: 20px 30px;
+    transition: all 300ms ease-in-out;
+    position: relative;
+}
+
+.barra-navegacion a:not(.logotipo)::after {
+    position: absolute;
+    display: block;
+    content: '';
+    border-bottom: solid 3px #ebbc15;
+    transform: scaleX(0);
+    height: 15px;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    transition: transform 300ms ease-in-out;
+}
+
+
+.barra-navegacion a:not(.logotipo):hover::after {
+    transform: scaleX(1);
+}
+
+.barra-navegacion a.logotipo {
+    box-sizing: border-box;
+    color: #ebbc15;
+    margin-right: auto;
+    font-size: 25px;
+    font-weight: bolder;
+}
+
+.barra-navegacion a.logotipo:hover {
+    color: #f3cc3f;
+}
+
+footer {
+    position: absolute;
+    background-color: white;
+    text-align: center;
+    padding: 1.5rem 5%;
+    width: 100%;
+    line-height: 35px;
+    bottom: 0;
+}
+
+footer a:first-child {
+    float: left;
+}
+
+footer a:nth-child(3) {
+    float: right;
+}
+
+footer a:last-child {
+    float: right;
+    margin-right: 25px;
+}
+
+footer > a {
+    text-decoration: none;
+    color: #64676b;
+}
+
+footer > a:hover {
+    text-decoration: underline;
+}
+
+footer .socials {
+    display: inline-flex;
+    justify-content: center;
+    gap: 1.5rem;
+}
+
+footer .socials a {
+    margin: 0;
+}
+
+footer .socials i {
+    font-size: 25px;
+    padding: 10px;
+    background-color: #212429;
+    color: white;
+    border-radius: 50%;
+    transition: transform 500ms ease-in-out;
+}
+
+footer .socials i:hover {
+    transform: scale(1.10);
+}
