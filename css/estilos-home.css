@@ -1,6 +1,7 @@
 body {
-    min-height: 100vh;
     position: relative;
+    min-height: calc(100vh);
+    padding-bottom: 70px;
 }
 
 #body-home {
@@ -22,7 +23,6 @@ body {
 
 body:not(#body-home) .barra-navegacion {
     background-color: #212529;
-    
 }
 
 .barra-navegacion a {
@@ -37,7 +37,7 @@ body:not(#body-home) .barra-navegacion {
     position: absolute;
     display: block;
     content: '';
-    border-bottom: solid 3px #ebbc15;
+    border-bottom: solid 3px #e2b511;
     transform: scaleX(0);
     height: 15px;
     left: 0;
@@ -60,7 +60,8 @@ body:not(#body-home) .barra-navegacion {
 }
 
 .barra-navegacion a.logotipo:hover {
-    color: #f3cc3f;
+    color: #f0c242;
+    transform: scale(1.03);
 }
 
 footer {
