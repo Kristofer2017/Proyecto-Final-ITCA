@@ -1,10 +1,12 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
 #contenedor-pagina {
     position: relative;
     min-height: 100vh;
 }
 
 #wrapper {
-    padding-bottom: 93px;
+    padding-bottom: 94px;
 }
 
 #body-home {
@@ -22,7 +24,6 @@
     align-items: center;
     padding: 0 5%;
 }
-
 
 body:not(#body-home) .barra-navegacion {
     background-color: #212529;
@@ -65,6 +66,10 @@ body:not(#body-home) .barra-navegacion {
 .barra-navegacion a.logotipo:hover {
     color: #f0c242;
     transform: scale(1.03);
+}
+
+.barra-navegacion .active {
+    color: #e2b511;
 }
 
 footer {
@@ -120,4 +125,41 @@ footer .socials i {
 
 footer .socials i:hover {
     transform: scale(1.10);
+}
+
+#contenidio-pagina-inicio {
+    color: white;
+    text-align: center;
+    margin: 5em auto;
+}
+
+#contenidio-pagina-inicio h1 {
+    font-size: 3.5em;
+    margin: 20px 0 13px;
+}
+
+#contenidio-pagina-inicio h3 {
+    font-style: italic;
+}
+
+#contenidio-pagina-inicio .container p {
+    font-family: "Merriweather", serif;
+    font-size: 0.8em;
+    line-height: 2;
+}
+
+#contenidio-pagina-inicio button {
+    padding: 15px 40px;
+    margin: 2rem auto;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    background-color: #e2b511;
+    font-weight: 600;
+    transition: transform 100ms linear;
+}
+
+#contenidio-pagina-inicio button:hover {
+    background-color: #ebbc15;
+    transform: scale(1.02);
 }
