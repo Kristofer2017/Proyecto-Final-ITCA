@@ -80,6 +80,7 @@ footer {
     text-align: center;
     padding: 1.5rem 5%;
     line-height: 35px;
+    
 }
 
 footer a:first-child {
@@ -162,4 +163,38 @@ footer .socials i:hover {
 #contenidio-pagina-inicio button:hover {
     background-color: #ebbc15;
     transform: scale(1.02);
+}
+
+.btn-wsp {
+    display: inline-flex;
+    background-color: green;
+    color: white;
+    font-size: 35px;
+    padding: 10px;
+    text-decoration: none;
+    border-radius: 50%;
+    position: sticky;
+    bottom: 20px;
+    margin-bottom: 20px;
+    left: 20px;
+    z-index: 1;
+}
+
+@media (width <= 850px) {
+
+    #wrapper {
+        padding-bottom: 240px;
+    }
+    footer {
+        display: flex;
+        flex-direction: column;
+    }
+
+    footer a:last-child {
+        margin-right: 0;
+    }
+
+    footer .socials {
+       margin: 20px auto;
+    }
 }
