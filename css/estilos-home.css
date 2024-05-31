@@ -49,3 +49,9 @@ nav {
     background-color: #ebbc15;
     transform: scale(1.02);
 }
+
+@media (width <= 815px) {
+    nav {
+        background-color: #21252985;
+    }
+}

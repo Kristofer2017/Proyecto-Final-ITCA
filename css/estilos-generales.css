@@ -1,9 +1,10 @@
 main {
-    min-height: calc(100vh - 77.5px - 93px - 115px);
+    min-height: calc(100vh - 77.5px - 93px - 85px);
 }
 
 /* Barra navegacion */
 nav {
+    position: relative;
     background-color: #212529;
     display: flex;
     justify-content: space-between;
@@ -67,6 +68,20 @@ nav a.active {
     color: #e2b511;
 }
 
+/* Menu toggler */
+.hamb-menu {
+    display: none;
+    background-color: transparent;
+    color: white;
+    text-decoration: none;
+    border: none;
+    font-size: 30px;
+    padding: 7px 10px;
+    position: absolute;
+    top: 1rem;
+    right: 1.5rem;
+}
+
 /* Pie de pagina */
 footer {
     width: 100%;
@@ -127,7 +142,7 @@ footer .footer-socials i:hover {
     padding: 10px;
     text-decoration: none;
     border-radius: 50%;
-    margin: 30px;
+    margin: 0 30px 30px 0;
 }
 
 /* Media queries */
@@ -150,6 +165,35 @@ footer .footer-socials i:hover {
     }
 }
 
-@media (width <= 768px) {
-    /* collapsable menu  */
+@media (width <= 815px) {
+    /* Collapsable menu  */
+    .hamb-menu {
+        display: flex;
+    }
+
+    nav {
+        flex-direction: column;
+    }
+
+    ul.barra-navegacion {
+        flex-direction: column;
+        display: none;
+        width: 100%;
+        align-items: center;
+        gap: 0rem;
+    }
+    ul.barra-navegacion > * {
+        width: 70%;
+        padding: 10px 0;
+    }
+
+    ul.barra-navegacion a {
+        display: inline-block;
+        text-align: center;
+        width: 100%;
+    }
+
+    nav > a.logotipo {
+        margin-right: auto;
+    }
 }
