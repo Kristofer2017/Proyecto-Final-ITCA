@@ -1,0 +1,86 @@
+
+small {
+    display: none;
+}
+.containerFormulario{
+    background-image: url(../imagenes/world-map.png);
+    background-color: rgba(10, 8, 7, 0.699);
+    padding:100px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra */
+    flex-direction: column; /* Orienta los elementos en una columna */
+    align-items: flex-start; /* Alinea los elementos horizontalmente al inicio */
+    gap: 20px; /* Espacio entre elementos */
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+.title {
+
+    text-align: center;
+}
+
+.title h2 {
+    margin: 0;
+    font-family: Candara;
+    font-size: large;
+    font-size: 34px;
+}
+
+.description {
+    color: #cccccc;
+    font-size: 14px;
+    margin: 10px 0 20px;
+}
+
+form table {
+    width: 100%;
+    border-collapse: collapse;
+}
+ form td{
+    padding: 10px;
+    vertical-align: top;
+ }
+.form-group {
+    display: flex;
+    flex-direction: column;
+}
+
+.form-group input, .form-group textarea {
+    width: 100%;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #cccccc;
+    background: white;
+    color: #333;
+    font-size: 16px;
+}
+
+.form-group textarea {
+    height: 200px;
+    resize: none;
+}
+
+
+
+
+.button {
+    grid-column: span 2;
+    display: flex;
+    justify-content: center;
+}
+
+.button input[type="submit"] {
+    background-color: #ffcc00;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    color: #333;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.button input[type="submit"]:hover {
+    background-color: #e6b800;
+}
