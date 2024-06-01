@@ -38,7 +38,45 @@
         </nav>
     </header>
     <main>
+        <br><br>
     <!--INICIO CONTENIDO-->
+        <div class="containerFormulario">
+    <div class="title">
+        <h2>CONTACT US</h2>
+        <p class="description">Lorem ipsum dolor sit amet, consectetur</p>
+    </div>
+    <form id="contactForm" onsubmit="return validateForm()" action="#">
+        <table>
+            <tr>
+                <td>
+                    <div class="form-group">
+                        <input type="text" id="name" name="name" placeholder="Enter your name" required>
+                    </div>
+                </td>
+                <td rowspan="3">
+                    <div class="form-group">
+                        <textarea id="message" name="message" placeholder="Enter your message" required></textarea>
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <div class="form-group">
+                        <input type="email" id="email" name="email" placeholder="Enter your email" required>
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <div class="form-group">
+                        <input type="tel" id="phone" name="phone" placeholder="Enter your phone number" required>
+                    </div>
+                </td>
+            </tr>
+        </table>
+        <div class="button">
+            <input type="submit" value="send message">
+        </div>
     
     
 
