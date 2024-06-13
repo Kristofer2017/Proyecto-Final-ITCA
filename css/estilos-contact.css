@@ -3,7 +3,7 @@ small {
     display: none;
 }
 .containerFormulario{
-    background-image: url(../imagenes/world-map.png);
+    background-image: url(../imagenes/world-map-actu2.png);
     background-color: rgba(10, 8, 7, 0.699);
     padding:100px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra */
@@ -11,8 +11,8 @@ small {
     align-items: flex-start; /* Alinea los elementos horizontalmente al inicio */
     gap: 20px; /* Espacio entre elementos */
     background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-size: cover;
+    background-position: center;
+    background-size: 85%;
 }
 
 .title {
@@ -83,4 +83,16 @@ form table {
 
 .button input[type="submit"]:hover {
     background-color: #e6b800;
+}
+
+@media only screen and (max-width: 800px) {
+    .containerFormulario{
+        background-size: 100%;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .containerFormulario{
+        background-size: 120%;
+    }
 }
