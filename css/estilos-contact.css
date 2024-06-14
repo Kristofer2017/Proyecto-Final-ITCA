@@ -65,6 +65,7 @@ form table {
     grid-column: span 2;
     display: flex;
     justify-content: center;
+    margin-top: 20px;
 }
 
 .button input[type="submit"] {
@@ -80,10 +81,6 @@ form table {
 
 .button input[type="submit"]:hover {
     background-color: #e6b800;
-}
-
-.btn-wsp a {
-    margin-top: 30px;
 }
 
 /* Correciones a la imagen de fondo en pantallas mas pequeñas */
@@ -111,6 +108,5 @@ form table {
 
     .form-group textarea {
         margin-top: 10px;
-        margin-bottom: 15px;
     }
 }

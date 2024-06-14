@@ -1,5 +1,5 @@
 main {
-    min-height: calc(100vh - 77.5px - 93px - 85px);
+    min-height: calc(90vh);
 }
 
 /* Barra navegacion */
@@ -127,11 +127,9 @@ footer .footer-socials i:hover {
 }
 
 .btn-wsp {
-    display: flex;
-    justify-content: flex-end;
-    position: sticky;
-    bottom: 0;
-    right: 0;
+    position: fixed;
+    bottom: 50px;
+    right: 50px;
 }
 
 .btn-wsp a {
@@ -142,7 +140,6 @@ footer .footer-socials i:hover {
     padding: 10px;
     text-decoration: none;
     border-radius: 50%;
-    margin: 0 30px 30px 0;
 }
 
 /* Media queries */
