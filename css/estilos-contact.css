@@ -82,14 +82,11 @@ form table {
     background-color: #e6b800;
 }
 
-.row > * {
-    padding: 5%;
-}
-
 .btn-wsp a {
     margin-top: 30px;
 }
 
+/* Correciones a la imagen de fondo en pantallas mas pequeñas */
 @media only screen and (max-width: 800px) {
     .containerFormulario{
         background-size: 100%;
@@ -102,13 +99,7 @@ form table {
     }
 }
 
-@media (width <= 992px) {
-    .row > * {
-        padding: 3%;
-    }
-
-}
-
+/* Punto de quiebre formulario responsivo */
 @media (width <= 767px) {
     .form-group {
         padding: 8px 0 8px;
