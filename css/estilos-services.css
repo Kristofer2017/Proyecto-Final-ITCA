@@ -6,7 +6,8 @@
 
 .contenedor-imagen  {
     background-color: #FFC800;
-    width: 50%;
+    
+    max-width: 13em;
     border-radius: 50%;
     display: flex;
     margin: auto;
