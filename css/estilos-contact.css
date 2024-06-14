@@ -61,9 +61,6 @@ form table {
     resize: none;
 }
 
-
-
-
 .button {
     grid-column: span 2;
     display: flex;
@@ -85,6 +82,14 @@ form table {
     background-color: #e6b800;
 }
 
+.row > * {
+    padding: 5%;
+}
+
+.btn-wsp a {
+    margin-top: 30px;
+}
+
 @media only screen and (max-width: 800px) {
     .containerFormulario{
         background-size: 100%;
@@ -94,5 +99,27 @@ form table {
 @media only screen and (max-width: 600px) {
     .containerFormulario{
         background-size: 120%;
+    }
+}
+
+@media (width <= 992px) {
+    .row > * {
+        padding: 3%;
+    }
+
+}
+
+@media (width <= 767px) {
+    .form-group {
+        padding: 8px 0 8px;
+    }
+
+    .row > * {
+        padding: 0;
+    }
+
+    .form-group textarea {
+        margin-top: 10px;
+        margin-bottom: 15px;
     }
 }

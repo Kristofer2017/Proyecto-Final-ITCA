@@ -1,0 +1,49 @@
+@import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&family=Noto+Serif:ital,wght@0,100..900;1,100..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+
+.contenedor-imagen  {
+    background-color: #FFC800;
+    width: 50%;
+    border-radius: 50%;
+    display: flex;
+    margin: auto;
+}
+
+.contenedor-imagen img {
+    display: flex;
+    width: 100%;
+    padding: 20%;
+}
+
+p {
+    font-family: "Lora", serif;
+    color: #888;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.container:first-child {
+    padding-top: 2.5rem;
+    line-height: 2.5;
+}
+
+.container:first-child p {
+    font-family: "Noto Serif", serif;
+    font-weight: 500;
+    font-size: 19px;
+    font-style: italic;
+}
+
+.caja-contenido {
+    padding: 20px;
+}
+.caja-contenido h3 {
+    padding: 20px 0 10px;
+}
+
+.btn-wsp a {
+    margin-top: 30px;
+}

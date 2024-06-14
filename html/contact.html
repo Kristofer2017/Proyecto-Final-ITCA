@@ -30,7 +30,6 @@
             <ul class="barra-navegacion">
                 <li><a href="services.html">Servicios</a></li>
                 <li><a href="portafolio.html">Portafolio</a></li>
-                <li><a href="about.html">Acerca</a></li>
                 <li><a href="team.html" >Equipo</a></li>
                 <li><a href="" class="active">Contacto</a></li>
             </ul>
@@ -45,35 +44,42 @@
         <h2>CONTACT US</h2>
         <p class="description">Lorem ipsum dolor sit amet, consectetur</p>
     </div>
+
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-6 col-sm-12">
+                <table class="w-100 h-100">
+                    <tr>
+                        <td>
+                            <div class="form-group">
+                                <input type="text" id="name" name="name" placeholder="Enter your name" required>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <div class="form-group">
+                                <input type="email" id="email" name="email" placeholder="Enter your email" required>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <div class="form-group">
+                                <input type="tel" id="phone" name="phone" placeholder="Enter your phone number" required>
+                            </div>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+            <div class="col-md-6 col-sm-12 form-group">
+                <textarea id="message" name="message" placeholder="Enter your message" required></textarea>
+            </div>
+        </div>
+    </div>
+
     <form id="contactForm" onsubmit="return validateForm()" action="#">
-        <table>
-            <tr>
-                <td>
-                    <div class="form-group">
-                        <input type="text" id="name" name="name" placeholder="Enter your name" required>
-                    </div>
-                </td>
-                <td rowspan="3">
-                    <div class="form-group">
-                        <textarea id="message" name="message" placeholder="Enter your message" required></textarea>
-                    </div>
-                </td>
-            </tr>
-            <tr>
-                <td>
-                    <div class="form-group">
-                        <input type="email" id="email" name="email" placeholder="Enter your email" required>
-                    </div>
-                </td>
-            </tr>
-            <tr>
-                <td>
-                    <div class="form-group">
-                        <input type="tel" id="phone" name="phone" placeholder="Enter your phone number" required>
-                    </div>
-                </td>
-            </tr>
-        </table>
+        
         <div class="button">
             <input type="submit" value="Send message" class="mt-2">
         </div>
